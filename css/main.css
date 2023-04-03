@@ -1,0 +1,89 @@
+:root {
+    --bacground-color:#e5e7e6;
+    --primary-color:#eee6d8;
+    --secondary-color:#daab3a;
+    --shadow:8px 6px 15px 0px rgba(0,0,0,0.76);
+    --border-radius: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: var(--bacground-color);
+    scroll-behavior: smooth;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 15px;
+    line-height: 120%;
+}
+
+h1 {
+    font-size: 2.5em
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.container {
+    width: 90%;
+    margin: auto; 
+}
+em {
+    display: inline-block;
+}
+.btn {
+    padding: 0.5em 1em;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.btn-primary {
+    background: var(--primary);
+    transition: all .4s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 3em;
+    margin: .5em;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-lien {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
