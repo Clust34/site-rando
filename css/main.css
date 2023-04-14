@@ -6,6 +6,9 @@
     --border-radius: 25px;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary);
     margin-bottom: 15px;
     line-height: 120%;
+    font-family: "Oswald";
 }
 
 h1 {
@@ -71,6 +75,8 @@ em {
     font-size: 3em;
     margin: .5em;
 }
+
+/********** NAVBAR *****************/
 
 .navbar {
     background-color: var(--secondary-color);
