@@ -1,0 +1,99 @@
+:root {
+    --bacground-color:#e5e7e6;
+    --primary-color:#eee6d8;
+    --secondary-color:#daab3a;
+    --shadow:8px 6px 15px 0px rgba(0,0,0,0.76);
+    --border-radius: 25px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
+@keyframes fade {
+    0% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+    animation-direction: normal;
+}
+.mySlides {
+    display: none;
+}
+#slider {
+    max-width: 720px;
+    max-height: 450px;
+    position: relative;
+    margin: auto;
+}
+#slider img {
+    width: 100%;
+    max-height: 370px;
+}
+
+@media  screen and (max-width: 768px) {
+    #slider img {
+        max-height: 192px;
+    }    
+}
+/************** CARD-RANDO **************/
+.card h2 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-rando {
+    width: 250px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.card-rando img {
+    background-size: cover;
+    width: 100%;
+    transition: all .4s ease-out;
+}
+
+.card-rando img:hover {
+    transform: scale(1.2);
+    transition: all .4s ease-out;
+}
+
+.card-rando h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.card-rando p {
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .card-rando {
+        width: 90%;
+        margin: auto;
+        margin-top: 2em;
+    }
+}
