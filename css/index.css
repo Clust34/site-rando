@@ -9,6 +9,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
 
+/************** SLIDER *******************/
 @keyframes fade {
     0% {
         opacity: 0.2;
@@ -43,16 +44,16 @@
 }
 
 @media  screen and (max-width: 768px) {
+    #slider {
+        max-width: 600px;
+        margin: auto;
+    }
     #slider img {
-        max-height: 192px;
+        max-height: 350px;
     }    
 }
 /************** CARD-RANDO **************/
-.card h2 {
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
+
 .card-row {
     display: flex;
     flex-wrap: wrap;
@@ -95,5 +96,42 @@
         width: 90%;
         margin: auto;
         margin-top: 2em;
+    }
+}
+
+/*********** PORTFOLIO *****************/
+.port-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap; 2em 2em;
+}
+.img-width {
+    width: 100%;
+    margin-bottom: 2em;
+}
+.img-widthe {
+    overflow: hidden; 
+     
+    width: 120%;
+    margin-bottom: 2em;
+}
+
+.port-row a {
+    width: 30%;
+ }
+ .test-img {
+    width: 30%;
+ }
+
+@media screen and (max-width:768px){
+    .port-row a {
+        width: 100%;
+        margin: auto;
+    }
+    .img-width {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
     }
 }
